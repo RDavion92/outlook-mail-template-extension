@@ -64,6 +64,14 @@ function listtemplate_callback(result)
     var b = ediv.querySelector(".btn-expand-template")
     b.innerHTML = template.subject;
 
+    var b = ediv.querySelector(".div-template-to")
+    b.innerHTML = template.to.join(', ')
+    b.title = template.to.join(', ')
+
+    var b = ediv.querySelector(".div-template-cc")
+    b.innerHTML = template.cc.join(', ')
+    b.title = template.cc.join(', ')
+
     var b = ediv.querySelector(".div-template-body")
     b.innerHTML = template.body
 
